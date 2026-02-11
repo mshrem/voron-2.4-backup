@@ -1,6 +1,6 @@
 variables.txt
-‎/.fluidd-theme
-‎/.theme
+/.fluidd-theme
+/.theme
 saved_variables.cfg
 adxl_results/belts/*.csv
 adxl_results/vibrations/*.tar.gz
