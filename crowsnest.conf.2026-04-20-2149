@@ -2,7 +2,7 @@
 #### This is the default config after installation.
 #### It is also used as the default config in MainsailOS.
 #### For details on how to configure this to your needs, see:
-#### https://github.com/mainsail-crew/crowsnest/blob/v5/README.md
+#### https://github.com/mainsail-crew/crowsnest/blob/master/README.md
 
 
 #####################################################################
@@ -23,6 +23,9 @@
 ####    http://<ip>:<port>/?action=[stream/snapshot]            #####
 ####                                                            #####
 #####################################################################
+####    RTSP Stream URL: ( if enabled and supported )           #####
+####    rtsp://<ip>:<rtsp_port>/stream.h264                     #####
+#####################################################################
 
 
 [crowsnest]
@@ -32,8 +35,6 @@ delete_log: true                       # Deletes log on every restart, if set to
 
 [cam logitech]
 mode: camera-streamer                   # ustreamer - Provides mjpg and snapshots. (All devices) # camera-streamer - Provides webrtc, mjpg and snapshots. (rpi + Raspi OS based only)
-enable_rtsp: true                      # If camera-streamer is used, this enables also usage of an rtsp server
-rtsp_port: 8554                      # Set different ports for each device!
 port: 8080                             # HTTP/MJPG Stream/Snapshot Port
 device: /dev/v4l/by-id/usb-046d_HD_Pro_Webcam_C920_41EC8F1F-video-index0                   # See Log for available ...
 resolution: 1920x1080                     # widthxheight format
